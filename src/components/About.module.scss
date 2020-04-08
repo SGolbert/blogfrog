@@ -1,12 +1,24 @@
+@import "../styles/base.scss";
+
+@media (max-width: $mobile-width) {
+  flex-direction: column;
+}
+
 .aboutContainer {
   display: flex;
+  border-bottom: 2px solid black;
   flex: 1;
   justify-content: space-around;
   padding-top: 200px;
+
+  @media (max-width: $mobile-width) {
+    padding: 50px;
+  }
 }
 
 .aboutContent {
   font-size: 3em;
   font-weight: bold;
   text-align: center;
+  line-height: 1;
 }
