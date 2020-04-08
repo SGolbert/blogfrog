@@ -1,0 +1,25 @@
+@import "../styles/base.scss";
+
+.sideBar {
+  border-bottom: 2px solid black;
+  border-right: 2px solid black;
+  min-width: 150px;
+  min-height: 100vh;
+  padding: 20px;
+
+  @media (max-width: $mobile-width) {
+    border-right: none;
+    min-height: 0;
+  }
+}
+
+.months {
+  @media (max-width: $mobile-width) {
+    display: flex;
+
+    li {
+      flex: 1 150px;
+    }
+    flex-wrap: wrap;
+  }
+}

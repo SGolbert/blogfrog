@@ -1,0 +1,9 @@
+@import "../styles/base.scss";
+
+.main {
+  display: flex;
+
+  @media (max-width: $mobile-width) {
+    flex-direction: column;
+  }
+}
